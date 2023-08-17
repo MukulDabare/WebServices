@@ -16,6 +16,7 @@ public class HomeController {
 	public Student getdata() {
 		String url="http://localhost:9093/getdata";
 		Student student = rt.getForObject(url, Student.class);
+	
 		return student;
 	}
 }
